@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 11 english</title>
+    <link rel="stylesheet" href="teaher.css" />
+    <script
+      src="https://kit.fontawesome.com/43a5bdea05.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: white;
+      }
+      .heder_top {
+        background-color: burlywood;
+        height: 20vh;
+        box-shadow: 3px 3px red, -1em 0 0.4em olive;
+      }
+      .heder_text {
+        text-align: center;
+        padding: 30px;
+        color: red;
+        font-size: 30px;
+      }
+      span {
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+      }
+      i {
+        color: rgb(255, 251, 0);
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(123, 255, 0);
+        /* margin-bottom: 5px; */
+      }
+
+      #About {
+        padding: 30px;
+        color: rgb(197, 32, 32);
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .about-col-1 {
+        flex-basis: 35%;
+      }
+
+      .about-col-2 {
+        flex-basis: 60%;
+      }
+
+      .tab-titles {
+        display: flex;
+        margin: 20px 0 40px;
+      }
+      .tab-links {
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 800;
+        cursor: pointer;
+        position: relative;
+      }
+      .tab-links::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+      }
+      .tab-links.active-link::after {
+        width: 50%;
+      }
+      .tab-contents ul li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      .tab-contents ul li span {
+        color: #ff004f;
+        font-size: 14px;
+      }
+      .tab-contents {
+        display: none;
+      }
+      .tab-contents.active-tab {
+        display: block;
+      }
+      .footer {
+        height: 40vh;
+        background-color: rgb(36, 6, 28);
+        color: white;
+
+
+        /* display: flex; */
+        /* justify-content: center; */
+      }
+      .sub-titles {
+        color: red;
+        text-align: center;
+      }
+      .contact {
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      .whatsapp {
+        font-size: 40px;
+        /* margin-left: 170px; */
+        /* margin-bottom: 40px; */
+      }
+      .me {
+        text-transform: uppercase;
+      }
+      .long {
+        width: 100%;
+        height: 300px;
+      }
+      .leela {
+        color: black;
+      }
+      img {
+        height: 200px;
+      }
+      .quistion{
+color:red;
+      }
+      .answer {
+        color:blue;
+        /* line-height: 10px; */
+      }
+      .voice{
+        color: #ff6600;
+        font-weight: 700;
+        text-decoration: underline;
+        /* text-align: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heder_top">
+      <p class="heder_text">
+        <span>LEARN EINGLISH</span><br /><i>Education website</i>
+      </p>
+
+      <!-- <div class="topnav">
+        <a class="active" href="" class="tab-links active-link" onclick="opentab('skills')">Long questions</a>
+        <a href="" class="tab-links" onclick="opentab('experience')">Short questions</a>
+        <a href="" class="tab-links" onclick="opentab('education')">grammer questions</a>
+
+      </div> -->
+      <div id="About">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="user.png" alt="" />
+            </div>
+            <div class="about-col-2">
+            <!-- <h1 class="sub-titles">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut architecto minus temporibus porro sed iste enim repellendus? Asperiores reprehenderit suscipit fugit molestias in ad, sit amet dolores magni rerum minima, saepe, tempora ea facere laudantium culpa! Voluptate perspiciatis iure maiores corrupti? Aut, ut quas illum mollitia itaque commodi sint. Facere hic saepe consequuntur placeat voluptatibus expedita. Eaque sint nihil exercitationem maxime? Asperiores commodi tenetur rem ea necessitatibus amet ex dolorem placeat molestiae repellat, odio rerum quis. Accusantium saepe similique minus nisi nostrum esse aut at fuga! Quo, ipsa nisi.</p> -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Long questions
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Sort questions
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Grammar questions
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <h1 class="leela">
+                ‘Leela’s Friend’ by RK Narayan – Questions and Answers(L.A.Q.),
+                class 11, WBCHSE
+              </h1>
+              <span> Prose / By Kartic Sir</span>
+              <div>
+                <img
+                  src="https://myenglishlearner.com/wp-content/uploads/2021/10/welcome-little-one-2-1024x536.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <h1 class="leela">
+                ‘Leela’s Friend’ by RK Narayan – Questions and Answers(S.A.Q.),
+                class 11, WBCHSE
+              </h1>
+              <span> Prose / By Kartic Sir</span>
+              <div>
+               <img src="https://myenglishlearner.com/wp-content/uploads/2021/10/welcome-little-one-1024x536.jpg" alt="" srcset="">
+              </div>
+              <h2 class="quistion">1)What was Mr. Sivasanker brooding over, standing in the front veranda  of his house? [Annual Exam. = 2018]
+                <br>
+
+                <p class="answer">Ans. Mr. Sivasanker was brooding over the servant problem, standing in the front veranda of his house.</p>
+                <br><br>
+                2) What is Mr. Sivasanker’s first impression of Sidda? [Annual Exam. = 2016]
+
+<p class="answer">Ans. Mr. Sivasanker’s first impression is that Sdda does not seem to be a bad sort and he looks tidy.</p><br><br>
+
+3) Who according to Sidda was his previous master? [Annual Exam. = 2020]
+<p class="answer">
+Ans. According to Sidda, his previous master was a doctor.</p>
+<br><br>
+4)Where did the doctor live?
+
+<p class="answer">Ans. The doctor lived in a bungalow near the market.</p><br><br>
+
+5) Why did Sidda leave the old master’s house? [Annual Exam. = 2015]
+
+<p class="answer">Ans. Sidda left the old master’s house because they left the town.
+</p><br><br>
+6) Why did Mr. Sivasanker call his wife?
+
+<p class="answer">Ans. Mr. Sivasanker called his wife because he was unable to make up his mind whether Sidda would work as a servant in his home.</p><br><br>
+
+7)What was Mrs Sivasanker’s opinion regarding Sidda?
+<p class="answer">
+Ans. Mrs. Sivasanker said that Sidda seemed better than other servants who worked earlier in their house.</p><br><br>
+8) “I like him. Don’t send him away.” – Who said this?
+<p class="answer">
+Ans. Leela, five years old daughter of Mr And Mrs Sivasanker said this.</p><br><br>
+
+9) “And that decided it.” – What was decided?
+<p class="answer">
+Ans. Sidda would work as a servant in their house. It was decided.</p><br><br>
+
+10) What kind of job did Sidda do in the Sivasanker’s household? [Annual Exam. = 2014]
+
+Or. What did Sidda do at Mr. Sivasanker’s house? [Annual Exam. = 2017]
+<p class="answer">
+Ans. Sidda washed clothes, tended the garden, ran errands, chopped wood and looked after Leela.</p>
+<br><br>
+11) What was Sidda given in return for his service in the house of Mr Sivasanker?
+<p class="answer">
+Ans. Sidda was given two meals a day and four rupees a month in return for his service in the house of Mr Sivasanker.</p><br><br>
+
+12) Who asked Sidda to throw the ball into the sky? [Annual Exam. = 2015, 2018]
+<p class="answer">
+Ans. Leela asked Sidda to throw the ball into the sky.</p>
+<br><br>
+13) What did Sidda say to Leela when the ball came down?
+Or. What did Sidda say when the ball thrown by him into the sky, came down? [Annual Exam. – 2022]
+<p class="answer">
+Ans. Sidda told Leela that the ball had touched the moon.</p><br><br>
+
+14) Why didn’t Leela see the traces of the moon on the ball?
+<p class="answer">
+Ans. Leela must be very quick to see the traces of the moon on the ball because it will all evaporate and go back to the moon.</p><br><br>
+
+15)How did Leela able to see the traces of the moon?
+<p class="answer">
+Ans. When Sidda allowed Leela to peep through a little gap in his finger, Leela abled to see the traces of the moon on the ball.</p><br><br>
+
+16)How, according to Sidda, could Leela touch the sky? [Annual Exam. = 2016]
+<p class="answer">
+Ans. According to Sidda, if Leela stood on a coconut tree, she could touch the sky.</p><br><br>
+
+17)When did Sidda touch the moon?
+<p class="answer">
+Ans. Sidda touched the moon whenever there was a big moon.</p><br><br>
+
+18) Why did Leela clap her hands and scream in wonder?
+<p class="answer">
+Ans. Leela clapped her hands and screamed in wonder because the moon was following them to the rose plants, the backyard and wherever they were going.
+</p><br><br>
+19) When did Leela hold a class for Sidda?
+<p class="answer">
+Ans. Leela held a class for Sidda at dusk.</p><br><br>
+
+20)What was Leela’s box filled with? [Annual Exam. = 2017, 2020]
+<p class="answer">
+Ans. Leela’s box was filled with catalogues, illustrated books and stumps of pencils.</p><br><br>
+
+21) What did Leela ask Sidda to draw? [Annual Exam. = 2018]
+<p class="answer">
+Ans. Leela asked Sidda to draw a kind of cat and crow.</p><br><br>
+
+22) What did Leela ask Sidda to copy?
+<p class="answer">
+Ans. Leela asked Sidda to copy two or three letters of the alphabet and draw a kind of cat and crow.</p><br><br>
+
+23) How many letters of the alphabet did Leela know to write? [Annual Exam. – 2022]
+<p class="answer">
+Ans. Leela knew two or three letters of the alphabet to write.</p><br><br>
+
+24) Why did Leela pity Sidda?
+<p class="answer">
+Ans. Leela pitied Sidda because Sidda was incapable to draw the crow and the letter ‘B’.</p><br><br>
+
+25) How did Sidda seek relief from Leela’s class?
+
+      Or. How would the school hour end?
+      <p class="answer">
+Ans. Sidda sought relief from Leela’s class by saying that her mother was calling her into dinner.</p><br><br>
+
+26) When did Leela run to her bed? [Annual Exam. – 2022]
+<p class="answer">
+Ans. Leela ran to her bed after dinner.</p><br><br>
+
+27) What stories did Sidda tell to Leela after dinner?
+<p class="answer">
+Ans. Sidda told incomparable stories of animals in the jungle, gods in heaven, magicians and princesse.</p><br><br>
+28) Who noticed that the gold chain of Leela was missing?
+<p class="answer">
+Ans. Leela’s mother noticed that the gold chain of Leela was missing.</p><br><br>
+
+29) “Her mother gave her a slap.” – Whose mother gave her a slap?
+<p class="answer">
+Ans. Leela’s mother gave her a slap.</p>
+<br><br>
+30) “I told you to take it off and put it in the box.” – What was ‘it’ referred to here? [Annual Exam. = 2019]
+<p class="answer">
+Ans. ‘It’ was referred to as Leela’s gold chain.</p><br><br>
+
+31) “His throat went dry.” – Whose throat went dry and why?
+<p class="answer">
+Ans. Sidda’s throat went dry because Leela’s mother asked him about the lost chain of Leela.</p>
+<br><br>
+32) When did Sidda flee from the house?
+<p class="answer">
+Ans. When Leela’s mother went into the kitchen to see something left on the oven after noticing Leela’s missing gold chain, Sidda fled from the house.
+</p><br><br>
+33) Why had Sidda vanished into the night?
+<p class="answer">
+Ans. Sidda had vanished into the night because he was afraid of being arrested on account of Leela’s gold chain.</p><br><br>
+
+34) Who went to the police station and lodged a complaint?
+<p class="answer">
+Ans. Mr Sivasanker went to the police station and lodged a complaint.</p><br><br>
+
+35) Why did Leela refuse to go to bed?
+<p class="answer">
+Ans. Leela refused to go to bed because she wanted Sidda to come with her to the bed and tell stories.</p><br><br>
+
+36) Why, according to Leela, was her mother rough?
+
+Or. What was Leela’s complaint against her mother?
+<p class="answer">
+Ans. According to Leela, her mother was rough because she used to abuse and worry Sidda.</p><br><br>
+
+37) What made Leela’s mother panicky?
+<p class="answer">
+Ans. The thought of harbouring such a villain like Sidda in their house made Leela’s mother panicky. She also thought that with his knowledge of the household, he might come at night and loot.</p><br><br>
+
+38) What did Leela think about Sidda’s escape?
+<p class="answer">
+Ans. Leela thought that Sidda was angry with them because he was not allowed to sleep inside the house.</p><br><br>
+
+39) What did Mr Sivasanker come to know from the inspector?
+
+Or. How many times was Sidda in jail?
+<p class="answer">
+Ans. Mr Sivasanker came to know from the inspector that Sidda had been in jail half a dozen times for stealing jewellery from children.
+</p><br><br>
+40) Why was the inspector furious with Mr Sivasanker?
+<p class="answer">
+Ans. The inspector was furious with Sivasanker because he did not consult him before employing Sidda in their house.</p><br><br>
+
+41) After how many days of stealing was Sidda arrested?
+<p class="answer">
+Ans. Sidda was arrested after four days of stealing.</p>
+
+42)Why was Leela overjoyed?
+<p class="answer">
+Ans. Leela was overjoyed to see Sidda brought back home.</p><br><br>
+
+43) Who brought Sidda into the house of Mr Sivasanker?
+<p class="answer">
+Ans. A police inspector and a constable brought Sidda into the house of Mr Sivasanker.</p><br><br>
+
+44) Who addressed Sidda a few words of treachery?
+<p class="answer">
+Ans. Mrs Sivasanker addressed Sidda with a few words of treachery.</p>
+
+45) What was Sidda’s answer when he was asked about the chain?
+<p class="answer">
+Ans. Sidda’s answer was that he had not taken the gold chain.</p><br><br>
+
+46) “Leave him alone, he hasn’t taken the chain.” – a) Who said this? b) Why did Leela think that she had not taken the chain?
+<p class="answer">
+Ans. a) Leela said this.
+
+        b) Leela thought that Sidda had not taken the chain because the behaviour, affection and love, she got from him made her think that he was innocent.</p><br><br>
+
+47) “Take him to the station. I think I shall have to sit with him tonight.” – Why did the inspector wish to sit with Sidda?
+<p class="answer">
+Ans. The inspector wished to sit with Sidda for further interrogation about the missing gold chain of Leela.</p>
+
+48) Who was not a reliable prosecution witness?
+<p class="answer">
+Ans. Leela was not a reliable prosecution witness.</p><br><br>
+
+49) “He looked at her mutely, like an animal.” – Who looked at and to whom?
+<p class="answer">
+Ans. Sidda looked at Leela.</p><br><br>
+
+50) Why was Leela in tears?
+<p class="answer">
+And. Sidda was in tears because  Sidda was being taken to the police station again.</p>
+
+51) “Nothing can make them confess.” – Who are referred to as ‘them’? [Annual Exam. – 2022]
+<p class="answer">
+Ans. The fellows like Sidda who have been in jail once or twice are referred to here as ‘them’.</p><br><br>
+
+52) Where did Leela’s mother find the chain? [Annual Exam. = 2014]
+<p class="answer">
+Ans. Leela’s mother found the chain inside the tamarind pot in the kitchen.</p><br><br>
+
+53) Who put the chain in the tamarind pot?
+<p class="answer">
+Ans. Leela put the chain in the tamarind pot.</p><br><br>
+
+54) What was Mr Sivasanker’s reaction when the chain was recovered?
+<p class="answer">
+Ans. Mr Sivasanker reproached her daughter for all this bother and ordered his wife not to give any chain to Leela thereafter.</p><br><br>
+                </h2>
+                <h1 class="leela">‘Karma’ by Khuswant Singh, questions and answers(S.A.Q.), class – 11, WBCHSE
+                  </h1><div>
+                  <img src="https://myenglishlearner.com/wp-content/uploads/2021/10/Khuswant-Singh-1024x536.jpg" alt="">
+
+            </div>
+            <h2 class="quistion">
+              1)Where did Sir Mohan Lal wait before the train arrived? [Class 11 – 2014]
+<p class="answer">
+Ans.  Sir Mohan Lal waited in the first-class waiting room of a railway station before the train arrived.</p><br><br>
+
+2)Where was the mirror in which Mohan Lal looked at himself?
+<p class="answer">
+Ans.  The mirror was in the first-class waiting room of a railway station.</p><br><br>
+
+3)How did Sir Mohan smile at the mirror?
+<p class="answer">
+ Ans.  Sir Mohan smiled at the mirror with an air of pity and patronage.</p><br><br>
+
+4)‘You are very much like everything else in this country’ – who said this and to whom?
+<p class="answer">
+Ans.  Sir Mohan Lal said this to the mirror.</p><br><br>
+
+5)‘You are a bit of all right, old chap.’ – who said this who is the old chap?
+<p class="answer">
+Ans.  The mirror said this and Sir Mohan Lal was the old chap.</p><br><br>
+
+6)What is the condition of the mirror?
+<p class="answer">
+Ans.  The mirror was in a wretched condition as the red oxide at the back of it had come off at several places.</p><br><br>
+
+7)Where did Sir Mohan have his suit from? [Class 11 – 2020]
+<p class="answer">
+Ans.  Sir Mohan had his suit was from Saville Row.</p><br><br>
+
+8)How was sir Mohan’s moustache? [Class 11 – 2018]
+<p class="answer">
+Ans. Sir Mohan’s moustache was neatly trimmed.</p><br><br>
+
+9)What did Sir Mohan have in the buttonhole of his shirt? [Class 11 – 2017]
+<p class="answer">
+Ans. Sir Mohan had a carnation in the buttonhole of his shirt.</p><br><br>
+
+10)‘There was still time for quick one.’ – What do you mean by the expression ‘quick one.’
+<p class="answer">
+Ans. – By this expression ‘quick one’, we mean enjoying a quick drink.</p>
+
+11)‘Koi  Hai’ – who shouted the call and who responded?
+<p class="answer">
+Ans.  Sir Mohan Lal shouted the call and a bearer with a white livery responded to the call.</p><br><br>
+
+12) Who was Lachmi?
+<p class="answer">
+Ans.  Lachmi was the wife of Sir Mohan Lal.</p><br><br>
+
+13)How old was Lady Lal?
+<p class="answer">
+Ans.  Lady Lal was in her middle forties.</p><br><br>
+
+14)Where did Lachmi sit at the railway station?
+<p class="answer">
+Ans.  Lachmi sat on a small grey steel trunk outside the first class waiting room.</p><br><br>
+
+15)What was Lachmi doing while waiting for the train?
+<p class="answer">
+Ans.  Lachmi was chewing a betel leaf and was fanning herself with a newspaper.</p><br><br>
+
+16)‘Where does the zenana stop?’ – What does the speaker want to know by this question?
+<p class="answer">
+Ans.  The speaker wants to know where the lady’s compartment stops.</p><br><br>
+
+17)‘Where does the zenana stop?’ – Who asked this and to whom?
+<p class="answer">
+Ans.   Lachmi asked this to passing railway coolie.</p><br><br>
+
+18)Where does the zenana stop?
+<p class="answer">
+Ans.  The zenana stops at the end of the platform.</p><br><br>
+
+19)Are you travelling alone sister?’ – Who asked this question and to whm?
+<p class="answer">
+Ans.  The railway coolie asked this question to Lachmi.</p>
+<br><br>
+20)Why did the railway coolie flatten his turban?
+<p class="answer">
+Ans.  The railway coolie flattened the turban to make a cushion to carry the steel trunk of Lachmi.</p><br><br>
+
+21) “Lachmi chatted away merrily.” – With whom did Lachmi chat away merrily? [Annual Exam. – 2022]
+<p class="answer">
+Ans.  Lachmi chatted away merrily with a coolie.</p><br><br>
+
+22)Why did Lady Lal stop at a hawker’s stall?
+<p class="answer">
+Ans.  Lady Lal stopped at the hawker’s stall to replenish her betel leaf case.</p><br><br>
+23)What did Lachmi take out from the brass carrier? [Class 11 – 2014, 2020]
+<p class="answer">
+Ans.  Lachmi took out from her brass carrier a bundle of cramped chapattis and some mango pickles from the brass carrier.</p><br><br>
+
+24)What did lady Lal eat as tiffin?
+<p class="answer">
+Ans.  Lady Lal ate chapattis and mango pickle as tiffin.</p>
+
+25)How was Lachmi clad? Or What was the dress of Lachmi?
+<p class="answer">
+Ans.  Lachmi was clad in a dirty white sari with a red border.</p><br><br>
+
+26)What was Sir Mohan Lal’s profession? [Class 11 – 2019]
+<p class="answer">
+Ans.  Sir Mohan Lal was a vizier and a barrister by profession.</p><br><br>
+
+27)In what language did Sir Mohan Lal speak? [Class 11 – 2016]
+<p class="answer">
+Ans. Sir Mohan Lal spoke in English but used anglicised Hindustani to Indians.</p>
+
+28)What was Lady lal fond of?
+<p class="answer">
+Ans.  Lady Lal was fond of a little gossip.</p><br><br>
+
+29)Why was Lady Lal fond of gossip?
+<p class="answer">
+Ans.  Lady Lal was fond of gossip because she had no one to talk to at home.</p><br><br>
+
+30)Why did the relatives of Lady Lal never come?
+
+<p class="answer">
+
+Ans.  The relatives of Lady Lal never came because Sir Mohan Lal did not like her poor illiterate relatives hanging around his bungalow.</p>
+
+31)Where did Lady Lal live in her house?
+<p class="answer">Ans.  Lady Lal lived in the upper storey of her house.</p><br><br>
+32)What was the coolie doing when Lachmi was eating?
+<p class="answer">
+Ans.  When Lachmi was eating, the coolie was drawing lines in the gravel with his finger.</p>
+<br><br>
+33)Why did Lachmi thank god?
+<p class="answer">
+Ans.  Lachmi thanked god for the favour of a filling meal.</p> <br><br>
+
+34)What announced the arrival of the train?
+<p class="answer">
+Ans.  The clanging of the bell announced the arrival of the train.</p><br><br>
+
+35)How was the zenana compartment?
+<p class="answer">
+Ans.  The zenana compartment was almost empty.</p>
+
+36)How much did Lachmi pay the coolie? [Class 11 – 2017]
+<p class="answer">
+Ans.  Lachmi paid two annas to dismiss the coolie.</p><br><br>
+
+37)Where was the interclass zenana compartment?
+<p class="answer">
+Ans.  The inter-class zenana compartment was next to the guard’s van.</p><br><br>
+
+38)What could not disturb Sir Mohan Lal’s sangfroid?
+<p class="answer">
+Ans.  The arrival of the train could not disturb the sangfroid of Sir Mohan Lal.</p><br><br>
+
+39)What do you mean by ‘sang froid’?
+<p class="answer">
+Ans.  Sangfroid means keeping mental stability or composure in the time of difficulty.</p><br><br>
+
+40)What does the expression ‘tickety boo’ means?
+<p class="answer">
+Ans.  The expression ‘tickety boo’ means everything in order.</p><br><br>
+
+41)What according to Mohan Lal were the exhibitions of bad breeding?
+<p class="answer">
+Ans.  Excitement, bustle and hurry were the exhibitions of bad breeding.</p><br><br>
+
+42)How many years did Mohan Lal stay in England? [Annual Exam. – 2022]
+<p class="answer">
+Ans.  Sir Mohan Lal stayed five years in England.</p><br><br>
+
+43)What had Sir Mohan Lal acquired during his five years abroad?
+<p class="answer">
+Ans.  During five years abroad Sir Mohan Lal had acquired the manners and attitudes of the upper class.</p><br><br>
+
+44)What were Sir Mohan’s favourite subjects of conversation?
+<p class="answer">
+Ans.  He could talk about any subjects, books, politics or people.</p><br><br>
+
+45)Which newspaper did Mohan Lal keep with him?
+<p class="answer">
+Ans.  Sir Mohan Lal used to keep with him ‘The Times.</p><br><br>
+
+46)What did he do with ‘The Times’?
+<p class="answer">
+Ans.  He did with the crossword puzzle.</p><br><br>
+
+ 47)What would Mohan Lal do if his Balliol tie or ‘The Times’ failed to impress people?
+ <p class="answer">
+Ans.  He would order scotch whiskey if his Balliol tie or The Times failed to impress people.</p><br><br>
+
+48)When was Sir Mohan dismayed?
+<p class="answer">
+Ans.  Sir Mohan was dismayed when he found the compartment empty.</p><br><br>
+
+49)Why was Sir Mohan’s face lit up?
+<p class="answer">
+Ans.  Sir Mohan’s face was lit up because he saw two English soldiers.</p><br><br>
+
+50)Whom did Sir Mohan meet in the compartment of the train? [Class 11 – 2015, 2018]
+<p class="answer">
+Ans. Sir Mohan met two English soldiers named Bill and Jim in the compartment of the train.</p><br><br>
+
+51)What were the two English soldiers carrying?
+<p class="answer">
+Ans.  The two English soldiers were carrying haversacks.</p><br><br>
+
+52)What were the names of the two English soldiers?
+<p class="answer">
+Ans.  The two English soldiers were Bill and Jim.</p><br><br>
+
+53)‘Ere, Bill’, he shouted, ‘one ere’. – Who said this and what is the actual word ‘ere’?
+<p class="answer">
+Ans.  Jim said this and the actual word is ‘here’.</p><br><br>
+
+54)Why was Sir Mohan Lal half smiling and half protesting?
+<p class="answer">
+Ans.  Sir Mohan Lal was half smiling because he found two English soldiers for his journey and he was half protesting as he was called a nigger by them.</p><br><br>
+
+55)‘Ek Dum Jao  – get out.’ – Who said this?
+<p class="answer">
+Ans.  Jim said this.</p><br><br>
+
+56)When did the soldiers pause?
+<p class="answer">
+Ans.  The soldiers paused when Sir Mohan protested in his Oxford accent.</p><br><br>
+
+57)‘Get the nigger out’ – Whom does the word ‘nigger’ refer to? [Class 11 – 2015]
+<p class="answer">
+Ans. The word ‘nigger’ refers to Sir Mohan Lal.</p><br><br>
+
+58)What things of Mohan were flung upon the platform?
+<p class="answer">
+Ans.  Sir Mohan’s suitcase, thermos flask, briefcase, bedding and ‘The Times’ were flung upon the platform.</p><br><br>
+
+59)‘I ‘ll have you arrested’ –  who said this and why?
+<p class="answer">
+Ans. Sir Mohan Lal said this because he was angry with the two English soldiers for throwing his belongings out of the train.</p><br><br>
+60)Who struck Sir Mohan Lal on his face? [Class 11 – 2019]
+<p class="answer">
+Ans.  The soldier, Jim struck Sir Mohan on the face.</p><br><br>
+
+61)What did the two English soldiers do with Sir Mohan Lal at last?
+<p class="answer">
+Ans.  At last, the two soldiers flung Sir Mohan out of the train.</p><br><br>
+
+62)What was Lachmi’s mouth bloated with?
+<p class="answer">
+Ans.  Lachmi’s mouth was bloated with betel saliva.</p><br><br>
+            </h2>
+          </div>
+            <div class="tab-contents" id="education">
+            <h1 class="leela">  Textual Grammar of Leela's Friend with answers |  WBCHSE class 11 textual grammar</h1>
+            <br><br>
+            <p class="voice">Voice Change of Leela's Friend</p><br>
+<h2 class="quistion">
+1. Mr. Sivasanker was brooding over the servant problem.
+<br><br>
+2. Sir, do you want a servant?
+<br><br>
+3. Sidda was subjected to a scrutiny by Mr. Sivasanker.
+<br><br>
+4. Sidda indicated a vague somewhere.
+<br><br>
+5. I like him.
+<br><br>
+6. Why did they send you away?
+<br><br>
+7. He called his wife.
+<br><br>
+8. Leela gave a cry of joy.
+<br><br>
+9. Let us keep him in our house.
+<br><br>
+10. Sidda was given two meals a day and four rupees a month.
+<br><br>
+11. His company made her supremely happy.
+<br><br>
+12. She flung the ball at him and he flung it back.
+<br><br>
+13. Now throw the ball into the sky.
+<br><br>
+14. Leela keenly examined the ball for traces of the moon.
+<br><br>
+15. He covered the ball tightly with his fingers.
+<br><br>
+16. Have you done it?
+<br><br>
+17. Does the moon know you?
+<br><br>
+18. I will show you something nice.
+<br><br>
+19. I have asked it to follow us about.
+<br><br>
+20. At dusk he carried her in and she held a class for him.
+<br><br>
+21. She made him squat on the floor with a pencil between his fingers.
+<br><br>
+22. She knew two or three letters of the alphabet.
+<br><br>
+23. She pitied him and redoubled her efforts to teach him
+<br><br>
+24. He told incomparable stories of animals in the jungle.
+<br><br>
+25. Her mother gave her a slap.
+<br><br><br>
+
+</h2>.
+<p class="voice">Answers</p>
+<h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<p class="voice">Narration Change of Leela's Friend </p>
+<br><br>
+<h2 class="quistion">
+1. "Sir, do you want a servant?" Sidda asked.
+<br><br>
+2. "Where were you before?" He asked.
+<br><br>
+3. "What is his name?" Sivasankar asked.
+<br><br>
+4. "I don't know master," sidda said.
+<br><br>
+5. "Why did they send you away?" Sivasankar asked.
+<br><br>
+6. "They left the town, master," Sidda said, giving the stock reply.
+<br><br>
+7. She looked at Sidda and said, "He deosn't seem to me worse than the others we have had."
+<br><br>
+8. "Have you done it?" Asked Leela.
+<br><br>
+9. "Does the moon know you?" Asked Leela.
+<br><br>
+10. He sought relief by saying, "I think your mother is calling you in to dinner."
+<br><br>
+11. "Tell me a story, Mother," Leela said.
+<br><br>
+12. "Can't you tell the story of the elephant?" Leela asked.
+<br><br>
+13. Leela made a noise of depreciation and asked, "Why shouldn't Sidda sit in our chair, Mother?"
+<br><br>
+14. "Where is he now?" Asked the wife.
+<br><br>
+15. "Don't go near him." The inspector said, stopping her.
+<br><br>
+16. "What a devil you must be to sted a thing from such an innocent child!" Remarked the inspector.
+<br><br>
+17. The inspector said to the constable. "Take him to the station."
+<br><br>
+18. His daughter aked, "Where is Sidda?"
+<br><br>
+19. "How did it get into the tamarind pot?" Mother asked.
+<br><br>
+20. "Why didn't you say so before? Asked Leela's mother.
+<br><br>
+21." I don't know "said Leela.
+<br><br>
+22." Bah! What a rough fellow must be! "said his wife with a shiver.
+<br><br>
+</h2>
+<p class="voice">Answers</p>
+<h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<br><br>
+<p class="voice">Transformation of Sentences of leela's friend</p>
+<br><br>
+<h2 class="quistion">
+
+1. Sidda was hanging about at the gate at a moment when Mr. Sivsanker was standing in the front veranda of his house, broading over the servant problem. (Split into three simple sentences)
+<br><br>
+2. Mr Sivasankar was unable to make up his mind. He called his wife. [join into a complex sentence]
+<br><br>
+3. She flung the ball at him and he flung it back. [make it complex]
+<br><br>
+4. They left the town. (make it negative)
+<br><br>
+5. Is this how I have drawn the crow? [make it negative)
+<br><br>
+6. Their five - years - old dauther came out. [use Relative clause)
+<br><br>
+7. She had a box filled with catalogs, illustrated books and stumps of pencils (make it complex]
+<br><br>
+8. Leela ran in and told her mother, "Sidda know the moon." (Make it simple)Transformation of Sentences of
+<br><br>
+9. Leela would drop the pencil and run out of the room. (make it simple)
+<br><br>
+10. What a devil you must be to steal a thing from such an innocent child! (make it assertive]
+<br><br>
+11. She had a box filled with catalogs. [find out the pariciple]
+<br><br>
+12 . He covered the ball tightly with his fingers and allowed her to peep through a little gap. [Join using infinitive)
+<br><br>
+13. He stopped near the well and pointed up. [Use participle]
+<br><br>
+14. He sought relief by saying. (Use the verb form of 'relief']
+<br><br>
+15. Leela replied haughtily. (use the adjective form of 'haughtily').
+<br><br>
+</h2>
+<p class="voice">Answers</p>
+<h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<br><br>
+<h1 class="leela">Textual Grammar of Karma with answers |Karma Textual Grammar with answers | WBCHSE class 11 textual grammar
+</h1><br><br>
+<p class="voice">Voice Change of  Karma
+</p>
+<br><br>
+<h2 class="quistion">
+1. He glanced at his watch.
+<br><br>
+2. She wore a dirty white sari with a red border.<br><br>
+3. She hailed a passing railway coolie.<br><br>
+4. The coolie hoisted the steel trunk on his head.<br><br>
+5. Lady Lal opened the brass carrier and took out a bundle of cramped chapatties.<br><br>
+6. I can't understand English and don't know their ways.<br><br>
+7. He did not like her poor illiterate relatives.<br><br>
+8. He just ordered her about anglicised Hindustani.<br><br>
+9. The nocturnal visits had, however, borne no fruit.<br><br>
+10. The clanging of the bell announced the approaching train.<br><br>
+11. She produced a two - anna bit from a knot in the sari and dismissed the coolie.<br><br>
+12. The arrival of the train did not disturb Mr. Mohan Lal's sang - froid.<br><br>
+13. Sir Mohan Lal had acquired the manners and attitudes of the upper class.<br><br>
+14. He wanted everything 'tickety - boo' and orderly.<br><br>
+15. He surveyed the compartment and noticed the unoccupied berth.<br><br>
+16. They picked up Sir Mohan's suitcase and flung it on the platform.<br><br>
+17. And Jim struck Sir Mohan flat on the face.
+<br><br>
+ </h2>
+ <p class="voice">Answers</p>
+ <h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<br><br>
+
+<p class="voice">Narration change of Karma </p>
+<br><br>
+<h2 class="quistion">
+1. "Ek Chota" ordered Sir Mohan.<br><br>
+2. "Where does the zenana stop?" Lady Lal asked.<br><br>
+3. "Are the trains very crowded on the lines?" asked lady Lal.<br><br>
+4. "These days all trains are crowded, but you'll find room in the Zenana" said the coolie.<br><br>
+5. "Are you travelling alone, sister?" said the coolie to Lady Lal.<br><br>
+6. "Get the nigger out." He muttered to his companion.<br><br>
+7. "Reserved!" yelled Bill.<br><br>
+8. Sir Mohan Lal murmured to the mirror," you are so very much like everything else in this country, ineffcient, dirty, indifferent."<br><br>
+9. Sir Mohan Lal said to the English soldiers,"Preposterous, preposterous! I'll have you arrested!"</h2>
+<br><br>
+<p class="voice">Answers</p>
+<h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<br><br>
+
+<p class="voice">Transformations of sentences of Karma </p>
+<br><br>
+<h2 class="quistion">
+1. The mirror was obviously made in India. (Make it complex)<br><br>
+2. She wore a dirty white sari with a red border. (Use relative clause)<br><br>
+3. The coolie flatened his turban to make a cushion. (Make it complex)<br><br>
+4. Lachmi chatted away merrily. (Use the adjective from of 'merrily')<br><br>
+5. Lady Lal picked up her brass tiffin - carrier and ambled along behind him. (Make it simple)<br><br>
+6. Lady Lal opened the brass carrier and took out a bundle of cramped chapattis and some mango pickle. ( Split into two simple sentences)<br><br>
+7. The arrival of the train did not disturb Sir Mohan Lal's sang - froid. (Make it complex)<br><br>
+8. The claning of the bell announced the approaching train. (Find out the gerund)<br><br>
+9. He did not like her poor illiterate relations hanging around his bungalow. (Make it complex)<br><br>
+10. They picked up Sir Mohan's suitcase and flung it on the platform. (Use paritciple)
+</h2>
+<br><br>
+<p class="voice">Answers</p>
+<h2>
+  <p class="answer">
+    Do it yourself, if you can't do, share in the group.😛😛
+<br><br>
+
+  </p>
+</h2>
+<br><br>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <!-- <h1 class="sub-titles">contact :</h1> -->
+      <p class="contact">geeksray223@example.com</p>
+      <p class="contact">7797232678</p>
+
+      <p class="contact">WEBSITE CREATE BY --- <i>Surajit Mandal</i></p>
+      <br />
+      <p class="contact">copyright &copy; claim</p>
+    </div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

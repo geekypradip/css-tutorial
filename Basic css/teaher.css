@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.heder_top {
+  width: 100%;
+  background-color: burlywood;
+  height: 20vh;
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+.heder_text {
+  text-align: center;
+  padding: 30px;
+  color: red;
+  font-size: 30px;
+}
+span {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+i {
+  color: rgb(255, 251, 0);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em rgb(123, 255, 0);
+  /* margin-bottom: 5px; */
+}
+
+#About {
+  padding: 30px;
+  color: rgb(197, 32, 32);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-2 {
+  flex-basis: 64%;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #ff004f;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+.footer {
+  height: 30vh;
+  background-color: black;
+  color: white;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.sub-titles {
+  color: red;
+  text-align: center;
+}
+.contact {
+  text-align: center;
+}
+
+.whatsapp {
+  font-size: 40px;
+  /* margin-left: 170px; */
+  /* margin-bottom: 40px; */
+}
+.me {
+  text-transform: uppercase;
+}
+.long {
+  width: 100%;
+  height: 300px;
+}

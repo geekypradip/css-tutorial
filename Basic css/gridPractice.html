@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid porject</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        display: grid;
+        background-color: black;
+        grid-column: 20px;
+        color: white;
+        grid-template-columns: auto auto auto auto;
+        justify-content: right;
+      }
+      .item {
+        margin: 25px 20px;
+        font-size: 25px;
+        text-align: center;
+      }
+      .title {
+        margin-right: 830px;
+        justify-items: left;
+        display: grid;
+        /* font-size: ; */
+      }
+      i {
+        color: rgb(175, 25, 45);
+      }
+      .body {
+        display: grid;
+        background-color: aqua;
+        grid-template-columns: auto auto;
+        height: 70vh;
+      }
+      .right {
+        background-color: red;
+      }
+      .left {
+        background-color: green;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: gray;
+        height: 100px;
+        justify-content: center;
+      }
+      .footer_text {
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span class="item title">PORTFO<i>LIO</i></span>
+      <span class="item">Home</span>
+      <span class="item">Services</span>
+      <span class="item">About</span>
+      <!-- <span class="item">Contact</span> -->
+    </div>
+    <div class="body">
+      <div class="right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta minima
+        debitis optio pariatur ratione ipsa. Assumenda molestiae, soluta
+        reiciendis quo deleniti suscipit exercitationem.
+      </div>
+
+      <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum
+        pariatur veniam rem voluptatibus. Dolorum harum quam in non quis ducimus
+        impedit ab.
+      </div>
+    </div>
+    <div class="footer">
+      <div class="fotter_text">
+        copyright &copy; Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox practice</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        background-color: black;
+        height: 70px;
+        color: white;
+        /* display: flex; */
+      }
+      ul {
+        padding: 30px;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        padding: 0 13px;
+      }
+      .left {
+        background-color: blue;
+        height: 80vh;
+        width: 40vw;
+        /* float: left; */
+      }
+      .right {
+        background-color: rgb(255, 51, 0);
+        height: 80vh;
+        width: 40vw;
+        /* float: right; */
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, similique!
+        Vitae obcaecati cupiditate dolore placeat minima? Quod ullam temporibus,
+        obcaecati animi sunt neque, recusandae officia aperiam mollitia qui quia
+        at?
+      </div>
+      <div class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+        perspiciatis animi ipsa aut neque, rerum ducimus veritatis soluta
+        consequatur, et illo harum vitae voluptatem dolores officia amet! Autem,
+        iusto! Totam praesentium alias, sint corrupti ad optio perspiciatis
+        natus porro a aperiam eaque ullam non inventore.
+      </div>
+    </div>
+  </body>
+</html>
